@@ -4,7 +4,7 @@ import LoginPage from "../../e2e/pageObjects/LoginPage";
 const loginPage = new LoginPage();
 let crd = null;
 
-Before(() => { cy.fixture("credentials").then((data) => 
+Before(() => { cy.fixture("credentials").then((data)   => 
   { crd = data; }); });
 
 Given("I open the OrangeHRM login page", () => 

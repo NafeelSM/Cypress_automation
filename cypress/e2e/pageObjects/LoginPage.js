@@ -18,7 +18,7 @@ class LoginPage {
   verifyError() {
     cy.get("div.oxd-alert.oxd-alert--error p.oxd-alert-content-text") // select the error element
       .should("be.visible") // check it's visible
-      .and("contain.text", "Invalid credentials"); // check it contains the expected text
+      .and("contain.text", "Invalid credentials"); // check in contain expected text 
   }
 //empty uname&password 
   emptyLogin() {
